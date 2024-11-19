@@ -1,0 +1,218 @@
+
+
+
+
+
+
+/* Estilos generales */
+body {
+
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://portalelyonyireh.edu.co/styles/assets/images/background/Fondo-Login-Yinn.jpg");
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Contenedor principal */
+.bienestar {
+    max-width: 600px;
+    background: #fff;
+    padding: 20px 30px;
+    box-shadow: 1px 0 15px black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilo para el input y el botón */
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: calc(100% - 110px);
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#certificado-container {
+    margin-top: 20px;
+}
+
+#certificado-canvas {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+#certificado-preview {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Mensaje de error */
+.error-message {
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fade-in 0.5s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Enlace de descarga */
+.btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #218838;
+}
+
+/* Cargando */
+#loading-container {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries para responsividad */
+
+/* Pantallas medianas (tabletas y pequeñas laptops) */
+@media (max-width: 991px) {
+
+
+    .bienestar {
+
+        max-width: 90%;
+        padding: 15px 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="number"], button {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
+
+
+
+/* Pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+
+
+    body {
+        padding: 10px; /* Ajuste de margen para pantallas pequeñas */
+        height: 80vh; /* Permite scroll en móviles */
+    }
+
+    .bienestar {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .input-group {
+        flex-direction: column; /* Cambia a columna en móviles */
+    }
+
+    input[type="number"] {
+        width: 100%; /* Ocupa todo el ancho */
+    }
+
+    button {
+        width: 100%; /* Botón de ancho completo */
+    }
+
+    #certificado-preview {
+        max-width: 100%; /* Adapta imágenes */
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

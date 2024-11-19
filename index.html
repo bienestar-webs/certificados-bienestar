@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html lang="es-CO-CTG-BIENESTAR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificados-Bienestar</title>
+    <link rel="icon" href="https://i.ibb.co/0nBJRxr/Logo-bienestar-institucional.png">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.0.279/pdf.min.js"></script>
+</head>
+<body>
+
+
+
+
+
+    <div class="bienestar">
+
+
+
+        <img style="width: 80px;" src="https://i.ibb.co/0nBJRxr/Logo-bienestar-institucional.png" alt="Bienestar">
+        <h1 style="color: #007bff;">Certificados De Bienestar</h1>
+        <div class="input-group">
+            <label style="color: rgb(255, 0, 0);" for="cedula">Ingresa tu cédula:</label>
+            <input type="number" id="cedula" placeholder="cédula" aria-describedby="error-message">
+            <button id="mostrar-certificado" class="btn">Ver Certificado</button>
+        </div>
+        <div id="loading-container" class="hidden" aria-live="polite">Cargando certificado...Espere...</div>
+        <div id="certificado-container" class="hidden">
+            <img id="certificado-preview" alt="" class="preview-img">
+            <canvas id="certificado-canvas"></canvas>
+            <a id="descargar-certificado" class="btn" target="_blank">Descargar Certificado</a>
+        </div>
+        <div id="error-message" class="error-message hidden" aria-live="assertive">
+            No se encontró un certificado para esta cédula. Por favor, verifique su información.
+        </div>
+
+
+
+    </div>
+
+    <script src="index.js"></script>
+
+
+</body>
+</html>
