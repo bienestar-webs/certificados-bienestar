@@ -260,6 +260,7 @@ input[type="number"]:hover {
     .card {
         max-width: 90%;
         padding: 15px 20px;
+           margin-top: 160px;
     }
 
     h1 {
@@ -300,6 +301,8 @@ input[type="number"]:hover {
 
     .card {
         padding: 15px;
+           margin-top: 160px;
+       
     }
 
     h1 {
