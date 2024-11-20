@@ -140,24 +140,6 @@ input[type="number"]:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Cargando */
 #loading-container {
 
@@ -228,7 +210,16 @@ input[type="number"]:hover {
 
 /* Media Queries para responsividad */
 
+
+
+
+
+
+
+
+
 /* Pantallas medianas (tabletas y pequeñas laptops) */
+
 @media (max-width: 991px) {
 
 
@@ -246,33 +237,20 @@ input[type="number"]:hover {
     }
 }
 
-/* Pantallas pequeñas (celulares) */
-@media (max-width: 600px) {
 
 
-    #certificado-canvas, #certificado-preview {
-        max-width: 100%;
-        margin: 10px auto;
-    }
-}
 
 
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
-/* Cargando */
-#loading-container {
-    font-size: 16px;
-    color: #007bff;
-}
 
-/* Media Queries para responsividad */
+
+
+
+
+
+
+
+
 
 /* Pantallas medianas (tabletas y pequeñas laptops) */
 @media (max-width: 991px) {
@@ -293,6 +271,21 @@ input[type="number"]:hover {
         font-size: 14px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Pantallas pequeñas (celulares) */
 @media (max-width: 600px) {
@@ -327,13 +320,13 @@ input[type="number"]:hover {
 
 
 
+
+
+
+
+
+
 /* Media queries para ajustar la vista en pantallas de 1360x768 */
-
-
-
-
-
-
 
 
  @keyframes moveUpDown {
