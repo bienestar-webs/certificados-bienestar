@@ -329,36 +329,32 @@ input[type="number"]:hover {
 
 /* Media queries para ajustar la vista en pantallas de 1360x768 */
 
-@media screen and (max-width: 1360px) {
-
- 
 
 
-    @keyframes moveUpDown {
-        0% {
-            top: 0px;
+  @keyframes moveUpDown {
+            0% {
+                top: 0px;
+            }
+            50% {
+                top: 200px;
+            }
+            100% {
+                top: 0px;
+            }
         }
-        50% {
-            top: 350px;
-        }
-        100% {
-            top: 0px;
-        }
-    }
-    
-    #certificado-canvas {
 
-        max-width: 350px;
-        position: fixed;
-        border-radius: 5px;
-        margin-left: 300px;
-        border: 2px solid;
-        border-image: linear-gradient(to right, #007bff, #ff0000, #00ff00, #ffff00, #40e0d0, #00008b) 1;
-        animation: moveUpDown 8s ease-in-out infinite;
-    }
-    
-
-}
+        @media screen and (max-width: 1360px) and (min-width: 1360px) and (max-height: 768px) and (min-height: 768px) {
+            #certificado-canvas {
+                max-width: 350px;
+                position: absolute;
+                top: 0px;
+                border-radius: 5px;
+                margin-left: 250px;
+                border: 2px solid;
+                border-image: linear-gradient(to right, #007bff, #ff0000, #00ff00, #ffff00, #40e0d0, #00008b) 1;
+                animation: moveUpDown 4s ease-in-out infinite;
+            }
+        }
 
 
 
