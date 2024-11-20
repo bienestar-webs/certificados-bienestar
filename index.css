@@ -28,7 +28,7 @@ body {
 
     max-width: 700px;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 100px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
  
@@ -174,23 +174,25 @@ input[type="number"]:hover {
 
 #certificado-container {
     
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #certificado-canvas {
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
+    
+    width: 80%;
+    max-width: 400px;
+    margin: 15px auto;
     border: 1px solid #ddd;
     background-color: #fff;
+    
 }
 
 #certificado-preview {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
+    
+    width: 80%;
+    max-width: 400px;
     display: block;
-    margin: 20px auto;
+    margin: 15px auto;
 }
 
 
