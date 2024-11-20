@@ -343,14 +343,14 @@ input[type="number"]:hover {
 }
 
 #certificado-canvas, #certificado-preview {
-    max-width: 90%; /* Ajuste responsivo */
-    margin: 0 auto; /* Centra el contenido */
-    position: absolute; 
-    top: 0; /* Remueve posiciones absolutas para mejor adaptación */
-    border-radius: 5px;
-    border: 2px solid;
-    border-image: linear-gradient(to right, #007bff, #ff0000, #00ff00, #ffff00, #40e0d0, #00008b) 1;
-    animation: moveUpDown 6s ease-in-out infinite;
+            max-width: 350px;
+            position: absolute;
+            top: 0px;
+            border-radius: 5px;
+            margin-left: 250px;
+            border: 2px solid;
+            border-image: linear-gradient(to right, #007bff, #ff0000, #00ff00, #ffff00, #40e0d0, #00008b) 1;
+            animation: moveUpDown 4s ease-in-out infinite;
 }
 
 @media screen and (min-width: 768px) {
