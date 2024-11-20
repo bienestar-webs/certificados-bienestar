@@ -12,8 +12,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120vh;
-    zoom: 0.6;
+    height: 100vh;
+    margin-top: 300px;
+    zoom: 0.8;
 }
 
 
