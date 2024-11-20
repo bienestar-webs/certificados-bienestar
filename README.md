@@ -1,15 +1,5 @@
 # certificados-bienestar
 
-
-
-
-<!DOCTYPE html>
-<html lang="es-CO">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificado Animado</title>
-    <style>
         @keyframes moveUpDown {
             0% {
                 top: 0px;
