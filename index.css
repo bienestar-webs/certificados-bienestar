@@ -329,18 +329,17 @@ input[type="number"]:hover {
 
 /* Media queries para ajustar la vista en pantallas de 1360x768 */
 
-
-@keyframes moveUpDown {
-    0% {
-        top: 0px;
+    @keyframes moveUpDown {
+        0% {
+            top: 0px;
+        }
+        50% {
+            top: 200px;
+        }
+        100% {
+            top: 0px;
+        }
     }
-    50% {
-        top: 200px;
-    }
-    100% {
-        top: 0px;
-    }
-}
 
 #certificado-canvas, #certificado-preview {
             max-width: 350px;
