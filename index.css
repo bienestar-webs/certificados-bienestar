@@ -13,6 +13,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    zoom: 0.9;
 }
 
 
@@ -172,6 +173,7 @@ input[type="number"]:hover {
 
 
 #certificado-container {
+    
     margin-top: 20px;
 }
 
@@ -254,6 +256,7 @@ input[type="number"]:hover {
 
 /* Pantallas medianas (tabletas y pequeñas laptops) */
 @media (max-width: 991px) {
+    
     .card {
         max-width: 90%;
         padding: 15px 20px;
