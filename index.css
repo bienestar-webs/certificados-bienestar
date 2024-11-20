@@ -174,14 +174,14 @@ input[type="number"]:hover {
 
 #certificado-container {
     
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 #certificado-canvas {
     
-    width: 80%;
-    max-width: 400px;
-    margin: 15px auto;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
     border: 1px solid #ddd;
     background-color: #fff;
     
@@ -189,10 +189,10 @@ input[type="number"]:hover {
 
 #certificado-preview {
     
-    width: 80%;
-    max-width: 400px;
+    width: 100%;
+    max-width: 500px;
     display: block;
-    margin: 15px auto;
+    margin: 20px auto;
 }
 
 
@@ -235,7 +235,7 @@ input[type="number"]:hover {
     }
 
 
-    #certificado-canvas, #certificado-preview {
+    #certificado-canvas {
         max-width: 90%;
         margin: 10px auto;
     }
