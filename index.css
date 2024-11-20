@@ -183,7 +183,7 @@ input[type="number"]:hover {
     margin: 20px auto;
     border: 1px solid #ddd;
     background-color: #fff;
-    zoom: 0.2;
+
     
 }
 
@@ -193,6 +193,7 @@ input[type="number"]:hover {
     max-width: 500px;
     display: block;
     margin: 20px auto;
+        zoom: 0.2;
 }
 
 
