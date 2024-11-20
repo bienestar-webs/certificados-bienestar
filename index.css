@@ -350,7 +350,7 @@ input[type="number"]:hover {
     border-radius: 5px;
     border: 2px solid;
     border-image: linear-gradient(to right, #007bff, #ff0000, #00ff00, #ffff00, #40e0d0, #00008b) 1;
-    animation: moveUpDown 4s ease-in-out infinite;
+    animation: moveUpDown 6s ease-in-out infinite;
 }
 
 @media screen and (min-width: 768px) {
