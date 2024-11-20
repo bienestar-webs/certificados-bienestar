@@ -345,7 +345,7 @@ input[type="number"]:hover {
 #certificado-canvas, #certificado-preview {
     max-width: 90%; /* Ajuste responsivo */
     margin: 0 auto; /* Centra el contenido */
-    position: relative; /* Utiliza relative para mejor manejo en pantallas pequeñas */
+    position: absolute; 
     top: 0; /* Remueve posiciones absolutas para mejor adaptación */
     border-radius: 5px;
     border: 2px solid;
