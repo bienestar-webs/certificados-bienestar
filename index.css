@@ -342,6 +342,7 @@ input[type="number"]:hover {
     }
 
 #certificado-canvas, #certificado-preview {
+    
             max-width: 350px;
             position: absolute;
             top: 0px;
@@ -351,32 +352,6 @@ input[type="number"]:hover {
             border-image: linear-gradient(to right, #007bff, #ff0000, #00ff00, #ffff00, #40e0d0, #00008b) 1;
             animation: moveUpDown 4s ease-in-out infinite;
 }
-
-@media screen and (min-width: 768px) {
-    #certificado-canvas, #certificado-preview {
-        max-width: 80%; /* Ajuste mayor para pantallas medianas */
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    #certificado-canvas, #certificado-preview {
-        max-width: 70%; /* Ajuste mayor para pantallas grandes */
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-@media screen and (min-width: 1366px) {
-    #certificado-canvas, #certificado-preview {
-        max-width: 60%; /* Ajuste para pantallas muy grandes */
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-
-
 
 
 
