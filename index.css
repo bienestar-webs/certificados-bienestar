@@ -2,16 +2,11 @@
 
 
 
-
-
 /* Estilos generales */
 body {
-
-    
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://portalelyonyireh.edu.co/styles/assets/images/background/Fondo-Login-Yinn.jpg");
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #333;
     margin: 0;
     padding: 0;
     display: flex;
@@ -20,55 +15,179 @@ body {
     height: 100vh;
 }
 
-h1 {
-    text-align: center;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 20px;
-}
+
 
 .hidden {
+
     display: none;
 }
 
-/* Contenedor principal */
-.bienestar {
-    max-width: 600px;
-    background: #fff;
-    padding: 20px 30px;
-    box-shadow: 1px 0 15px black;
-    border-radius: 10px;
-    text-align: center;
+
+
+.card {
+
+    max-width: 700px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+    
 }
+
+
+
+
+.form-label {
+
+
+color: rgb(0, 0, 0);
+font-weight: bold;
+
+
+}
+
+
 
 /* Estilo para el input y el botón */
 .input-group {
     margin-bottom: 20px;
 }
 
-input[type="number"] {
-    padding: 10px;
-    width: calc(100% - 110px);
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    box-sizing: border-box;
-    font-size: 16px;
+
+
+
+
+   
+
+
+
+.usuarios2 {
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    margin: 20px 0;
+    text-align: left; 
+    font-weight: bold;
+   
 }
 
-button {
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+
+
+.usuarios2 input {
+
+
+    padding: 12px;
+    border: 1px solid #000000;
     font-size: 16px;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    transition: border-color 0.3s; 
+    
 }
 
-button:hover {
-    background-color: #0056b3;
+
+ 
+input[type="number"]:hover { 
+    
+    
+    box-shadow: 0px 0 12px #0d6efd;
+
+
 }
+
+
+
+
+.usuarios2 input::placeholder {
+
+    color: transparent;
+}
+
+
+
+
+.usuarios2 label {
+
+
+    position: absolute;
+    top: 10px; 
+    left: 12px; 
+    color: #666;
+    font-size: 16px;
+    transition: 0.3s;
+    pointer-events: none;
+    background-color: #fff;
+    padding: 0 4px; /
+}
+
+
+
+
+
+/* Movimiento del label al enfocar o escribir en el input */
+
+
+.usuarios2 input:focus + label,
+.usuarios2 input:not(:placeholder-shown) + label {
+
+
+    top: -12px; /* Ajusta la altura para que el label esté justo encima del borde */
+    left: 12px; /* Asegúrate de que esté alineado con el input */
+    font-size: 14px; /* Reduce el tamaño del label al subir */
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cargando */
+#loading-container {
+
+    font-size: 16px;
+    color: #007bff;
+}
+
+
+
+/* Mensaje de error */
+.error-message {
+
+    color: #d9534f;
+    font-size: 14px;
+    margin-top: 10px;
+    opacity: 0;
+    animation: fade-in 0.5s forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
 
 #certificado-container {
     margin-top: 20px;
@@ -90,47 +209,13 @@ button:hover {
     margin: 20px auto;
 }
 
-/* Mensaje de error */
-.error-message {
-    color: #d9534f;
-    font-size: 14px;
-    margin-top: 10px;
-    opacity: 0;
-    animation: fade-in 0.5s forwards;
-}
 
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
 
-/* Enlace de descarga */
-.btn {
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
 
-.btn:hover {
-    background-color: #218838;
-}
 
-/* Cargando */
-#loading-container {
-    margin-top: 20px;
-    font-size: 16px;
-    color: #007bff;
-}
+
+
+
 
 
 
@@ -157,8 +242,51 @@ button:hover {
 @media (max-width: 991px) {
 
 
-    .bienestar {
+    .card {
 
+        margin-top: 180px;
+
+
+    }
+
+
+    #certificado-canvas, #certificado-preview {
+        max-width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Pantallas pequeñas (celulares) */
+@media (max-width: 600px) {
+
+
+    #certificado-canvas, #certificado-preview {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+}
+
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Cargando */
+#loading-container {
+    font-size: 16px;
+    color: #007bff;
+}
+
+/* Media Queries para responsividad */
+
+/* Pantallas medianas (tabletas y pequeñas laptops) */
+@media (max-width: 991px) {
+    .card {
         max-width: 90%;
         padding: 15px 20px;
     }
@@ -176,18 +304,14 @@ button:hover {
     }
 }
 
-
-
 /* Pantallas pequeñas (celulares) */
 @media (max-width: 600px) {
-
-
     body {
-        padding: 10px; /* Ajuste de margen para pantallas pequeñas */
-        height: 80vh; /* Permite scroll en móviles */
+        padding: 10px;
+        height: 80vh;
     }
 
-    .bienestar {
+    .card {
         padding: 15px;
     }
 
@@ -195,20 +319,8 @@ button:hover {
         font-size: 1.5rem;
     }
 
-    .input-group {
-        flex-direction: column; /* Cambia a columna en móviles */
-    }
-
-    input[type="number"] {
-        width: 100%; /* Ocupa todo el ancho */
-    }
-
-    button {
-        width: 100%; /* Botón de ancho completo */
-    }
-
-    #certificado-preview {
-        max-width: 100%; /* Adapta imágenes */
+    input[type="number"], button {
+        font-size: 14px;
     }
 
     .btn {
