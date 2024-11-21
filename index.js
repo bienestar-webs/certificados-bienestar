@@ -1,5 +1,6 @@
 
 
+
 // Función para mostrar el cargando
 function showLoading() {
     const loadingContainer = document.getElementById("loading-container");
@@ -29,6 +30,13 @@ function hideError() {
     const errorMessage = document.getElementById("error-message");
     errorMessage.classList.add("hidden");
 }
+
+
+
+
+
+
+
 
 document.getElementById("mostrar-certificado").addEventListener("click", async function () {
     const cedula = document.getElementById("cedula").value;
@@ -78,6 +86,12 @@ document.getElementById("mostrar-certificado").addEventListener("click", async f
         hideLoading();
         // Quitar el fondo cuando se muestra el certificado
         document.body.classList.add("no-background");
+
+        // Ocultar la imagen después de 10 segundos
+        setTimeout(() => {
+            certificadoContainer.classList.add("hidden");
+        }, 20000);
+
     } catch (error) {
         hideLoading();
         showError(error.message || "Hubo un problema al cargar el certificado.");
