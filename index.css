@@ -140,6 +140,8 @@ input[type="number"]:hover {
 
 
 
+
+
 /* Cargando */
 #loading-container {
 
@@ -171,30 +173,29 @@ input[type="number"]:hover {
 
 
 
-#certificado-container {
-    
-    margin-top: 20px;
-      zoom: 0.6;
+/* Estilos generales (PC) */
+@keyframes moveUpDown {
+    0% {
+        top: 0px;
+    }
+    50% {
+        top: 200px;
+    }
+    100% {
+        top: 0px;
+    }
 }
 
 #certificado-canvas {
-    
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
-    border: 1px solid #ddd;
-    background-color: #fff;
 
-    
-}
-
-#certificado-preview {
-    
-    width: 100%;
-    max-width: 500px;
-    display: block;
-    margin: 20px auto;
-      
+    max-width: 350px;
+   position: absolute;
+    top: 0px;
+    border-radius: 5px;
+    margin-left: 280px;
+    border: 2px solid;
+    border-image: linear-gradient(to right, #007bff, #ff0000, #00ff00, #ffff00, #40e0d0, #00008b) 1;
+    animation: moveUpDown 8s ease-in-out infinite;
 }
 
 
@@ -214,7 +215,6 @@ input[type="number"]:hover {
 
 
 
-/* Media Queries para responsividad */
 
 
 
@@ -224,14 +224,37 @@ input[type="number"]:hover {
 
 
 
-/* Pantallas medianas (tabletas y pequeñas laptops) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos específicos para pantallas pequeñas (celulares) */
+
+
+
+
+
 
 @media (max-width: 991px) {
 
 
     .card {
 
-        margin-top: 160px;
+        margin-top: 110px;
 
 
     }
@@ -246,128 +269,57 @@ input[type="number"]:hover {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Pantallas medianas (tabletas y pequeñas laptops) */
-@media (max-width: 991px) {
-    
-    .card {
-        max-width: 90%;
-        padding: 15px 20px;
-           margin-top: 160px;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    input[type="number"], button {
-        font-size: 14px;
-    }
-
-    .btn {
-        font-size: 14px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Pantallas pequeñas (celulares) */
 @media (max-width: 600px) {
 
-    body {
-        padding: 10px;
-        height: 80vh;
+
+
+    #certificado-canvas {
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        position: static;
+        animation: none;
     }
 
-    .card {
-        padding: 15px;
-           margin-top: 160px;
-       
+    #certificado-preview {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
     }
 
-    h1 {
-        font-size: 1.5rem;
-    }
+    
+.card {
 
-    input[type="number"], button {
-        font-size: 14px;
-    }
+    max-width: 90%;
+    padding: 15px 20px;
+}
 
-    .btn {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
+h1 {
+    font-size: 1.8rem;
+}
+
+input[type="number"], button {
+    font-size: 14px;
+}
+
+.btn {
+    font-size: 14px;
 }
 
 
 
+/* Cargando */
 
+#loading-container {
+    font-size: 16px;
+    color: #007bff;
+}
 
-
-
-
-
-
-
-
-
-
-/* Media queries para ajustar la vista en pantallas de 1360x768 */
-
-
- @keyframes moveUpDown {
-        0% {
-            top: 0px;
-        }
-        50% {
-            top: 200px;
-        }
-        100% {
-            top: 0px;
-        }
-    }
-
-    @media screen and (max-width: 1360px) and (min-width: 1360px) and (max-height: 768px) and (min-height: 768px) {
-        
-        #certificado-canvas {
-            max-width: 350px;
-            position: absolute;
-            top: 0px;
-            border-radius: 5px;
-            margin-left: 250px;
-            border: 2px solid;
-            border-image: linear-gradient(to right, #007bff, #ff0000, #00ff00, #ffff00, #40e0d0, #00008b) 1;
-            animation: moveUpDown 4s ease-in-out infinite;
-        }
-    }
-
-
-
-
+}
 
 
 
