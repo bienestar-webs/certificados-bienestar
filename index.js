@@ -57,7 +57,7 @@ document.getElementById("mostrar-certificado").addEventListener("click", async f
     try {
         const response = await fetch(url);
         if (!response.ok) {
-            throw new Error(" No se encontró un certificado para esta cédula. Por favor, ¡verifique su información!");
+          throw new Error("No se encontró un certificado para este documento... Por favor, ¡acérquese a las oficinas de bienestar!");
         }
         const blob = await response.blob();
         const objectURL = URL.createObjectURL(blob);
