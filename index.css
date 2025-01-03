@@ -2,200 +2,224 @@
 
 
 
-/* Estilos generales */
+
+
+/* General Styles */
 body {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://portalelyonyireh.edu.co/styles/assets/images/background/Fondo-Login-Yinn.jpg");
+
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://portalelyonyireh.edu.co/styles/assets/images/background/Fondo-Login-Yinn.jpg') no-repeat center center fixed;
     background-size: cover;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-}
-
-
-
-.hidden {
-
-    display: none;
-}
-
-
-
-.card {
-
-    max-width: 700px;
-    width: 100%;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
- 
-    
-}
-
-
-
-
-.form-label {
-
-
-color: rgb(0, 0, 0);
-font-weight: bold;
-
-
-}
-
-
-
-/* Estilo para el input y el botón */
-.input-group {
-    margin-bottom: 20px;
-}
-
-
-
-
-
-   
-
-
-
-.usuarios2 {
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    position: relative;
-    margin: 20px 0;
-    text-align: left; 
-    font-weight: bold;
-   
-}
-
-
-
-
-.usuarios2 input {
-
-
-    padding: 12px;
-    border: 1px solid #000000;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: border-color 0.3s; 
-    
-}
-
-
- 
-input[type="number"]:hover { 
-    
-    
-    box-shadow: 0px 0 12px #0d6efd;
-
-
-}
-
-
-
-
-.usuarios2 input::placeholder {
-
-    color: transparent;
-}
-
-
-
-
-.usuarios2 label {
-
-
-    position: absolute;
-    top: 10px; 
-    left: 12px; 
-    color: #666;
-    font-size: 16px;
-    transition: 0.3s;
-    pointer-events: none;
-    background-color: #fff;
-    padding: 0 4px; /
-}
-
-
-
-
-
-/* Movimiento del label al enfocar o escribir en el input */
-
-
-.usuarios2 input:focus + label,
-.usuarios2 input:not(:placeholder-shown) + label {
-
-
-    top: -12px; /* Ajusta la altura para que el label esté justo encima del borde */
-    left: 12px; /* Asegúrate de que esté alineado con el input */
-    font-size: 14px; /* Reduce el tamaño del label al subir */
+    height: 100vh;
     color: #333;
 }
 
 
 
 
+.container {
 
-
-/* Cargando */
-#loading-container {
-
-    font-size: 16px;
-    color: #007bff;
+    width: 100%;
+    max-width: 600px; /* Aumentar el tamaño máximo */
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 
 
-/* Mensaje de error */
-.error-message {
+.card {
+
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    text-align: center;
+}
+
+
+
+.card-header .logo {
+
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+
+
+.card-header h1 {
+
+    font-size: 1.8rem;
+    color: #0d6efd;
+    margin-bottom: 20px;
+}
+
+
+
+.input-group {
+
+    position: relative;
+    margin-bottom: 20px;
+}
+
+
+
+
+.input-group input {
+
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    box-sizing: border-box; /* Aseguramos que el padding no cause desbordamiento */
+    transition: border-color 0.3s;
+}
+
+
+
+.input-group input:focus {
+
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.5);
+}
+
+
+
+
+
+.input-group label {
+
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 1rem;
+    color: #999;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 0.8rem;
+    color: #0d6efd;
+}
+
+
+
+
+.btn1 {
+
+    width: 60%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background: #0d6efd;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btn1:hover {
+
+    background: #004bb7;
+}
+
+
+
+
+.btn2 {
+
+    width: 40%;
+    padding: 12px;
+    font-size: 14px;
+    color: #ffffff;
+    background: #009419;
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    margin-left: 11px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.btn2:hover {
+
+    background: #00570e;
+}
+
+
+
+
+
+#loading-container {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #0d6efd;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+
+#error-message {
 
     color: #d9534f;
-    font-size: 14px;
     margin-top: 10px;
-    opacity: 0;
-    animation: fade-in 0.5s forwards;
+    animation: fadeIn 0.8s ease-in-out;
 }
 
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 
 
 
-/* Estilos generales (PC) */
-@keyframes moveUpDown {
-    0% {
-        top: 0px;
-    }
-    50% {
-        top: 200px;
-    }
-    100% {
-        top: 0px;
-    }
+#certificado-container {
+
+    margin-top: 10px;
+    text-align: center;
+
 }
+
+
+
 
 #certificado-canvas {
 
-    max-width: 350px;
-   position: absolute;
-    top: 0px;
+    width: 80%;
+    max-width: 333px; /* Ajustamos el tamaño máximo del canvas */
+    border: 1px solid #ddd;
     border-radius: 5px;
-    margin-left: 280px;
-    border: 2px solid;
-    border-image: linear-gradient(to right, #007bff, #ff0000, #00ff00, #ffff00, #40e0d0, #00008b) 1;
-    animation: moveUpDown 8s ease-in-out infinite;
+    margin: 10px auto;
+    animation: certificado 2.5s ease-in-out;
+}
+
+
+@keyframes certificado {
+
+    from { opacity: 0; }
+    to { opacity: 1; }
+
 }
 
 
@@ -208,125 +232,75 @@ input[type="number"]:hover {
 
 
 
+/* RESPOSIVE PARA DISPOSITIVOS MOBILES */
+
+@media screen and (max-width: 720px) {
 
 
+    body {
+
+        height: 90vh;
+
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Estilos específicos para pantallas pequeñas (celulares) */
-
-
-
-
-
-
-@media (max-width: 991px) {
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
 
 
     .card {
+        padding: 30px;
+    }
 
-        margin-top: 50px;
+
+    .card-header h1 {
+        font-size: 22px;
+    }
+
+
+    .input-group input {
+        font-size: 16px;
+    }
+
+
+
+    .btn1 {
+
+        width: 44%;
+        padding: 12px;
+        font-size: 15px;
 
 
     }
 
+
+    .btn2 {
+        
+        width: 44%;
+        font-size: 15px;
+        padding: 12px;
+        margin-left: 0px;
+        position: relative;
+        top: -70px;
+        animation: btn2 5s ease-in-out;
+       
+    }
+
+
+    @keyframes btn2 {
+
+    from { opacity: 0; }
+    to { opacity: 1; }
+
+     }
 
     #certificado-canvas {
-        max-width: 90%;
-        margin: 10px auto;
-    }
-}
 
-
-
-
-@media (max-width: 600px) {
-
-
-
-    #certificado-canvas {
-        width: 100%;
-        max-width: 500px;
-        margin: 20px auto;
-        border: 1px solid #ddd;
-        background-color: #fff;
-        position: static;
-        animation: none;
-    }
-
-    #certificado-preview {
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-        display: block;
-        margin: 20px auto;
+        max-width: 80%; /* Aseguramos que el canvas se ajuste bien en pantallas pequeñas */
+        
     }
 
     
-.card {
-
-    max-width: 90%;
-    padding: 15px 20px;
 }
-
-h1 {
-    font-size: 1.8rem;
-}
-
-input[type="number"], button {
-    font-size: 14px;
-}
-
-.btn {
-    font-size: 14px;
-}
-
-
-
-/* Cargando */
-
-#loading-container {
-    font-size: 16px;
-    color: #007bff;
-}
-
-}
-
-
-
-
-
-
-
-
-
-
