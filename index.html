@@ -1,90 +1,48 @@
 
 
-
-
-
-
 <!DOCTYPE html>
-<html lang="es-CO-CTG.BIENESTAR">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificados-Bienestar</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Certificados de Bienestar</title>
     <link rel="icon" href="https://i.ibb.co/swz6xfy/Logo-bienestar-institucional.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.15.349/pdf.min.js"></script>
     <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.0.279/pdf.min.js"></script>
 </head>
 <body>
 
 
-
-
-    <div class="container d-flex flex-column justify-content-center align-items-center vh-100">
-
-      
-
-        <div class="card shadow-lg p-4 bg-light">
-
-
-
-
-     
-
-
-            <div class="card-body text-center">
-
-                <img class="img-fluid mb-4" style="max-width: 80px;" src="https://i.ibb.co/swz6xfy/Logo-bienestar-institucional.png" alt="Bienestar">
-                <h1 class="h3 mb-3 text-primary">Certificados De Bienestar</h1>
-
-             
-                
-                <div class="mb-3">
-
-
-                        <div class="usuarios2">
-                 
-                    <input type="number" id="cedula" class="form-control" autocomplete="off" placeholder="Tu cédula" aria-describedby="error-message" required>
-                    <label class="form-label" for="cedula">Ingresa tu cédula:</label>
-
-                        </div>
-                 </div>
-                
-             
-
-                <button id="mostrar-certificado" class="btn btn-primary mb-3">Ver Certificado</button>
-         
-               
-
-                <div id="loading-container" class="hidden" aria-live="polite">Cargando certificado,Espere...!</div>
-
-                <div id="certificado-container" class="hidden mt-4">
-
-                
-                    <img id="certificado-preview" class="img-fluid preview-img mb-3" alt="">
-
-                    <canvas id="certificado-canvas" class="mb-3"></canvas>
-
-                    <a id="descargar-certificado" class="btn btn-primary" target="_blank">Descargar Certificado</a>
-
-                </div>
-
-                <div id="error-message" class="error-message hidden text-danger mt-3" aria-live="assertive"></div>
-
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://i.ibb.co/swz6xfy/Logo-bienestar-institucional.png" alt="Logo Bienestar" class="logo">
+                <h1>Certificados de Bienestar</h1>
             </div>
-
+            <div class="card-body">
+                <div class="input-group">
+                    <input type="text" id="cedula" placeholder=" " required>
+                    <label for="cedula">Ingresa tu cédula</label>
+                </div>
+                <button id="mostrar-certificado" class="btn1">Ver Certificado</button>
+                <div id="loading-container" class="hidden">Cargando certificado, espere...</div>
+                <div id="certificado-container" class="hidden">
+                    <canvas id="certificado-canvas"></canvas>
+                    <a id="descargar-certificado" href="#" download class="btn2">Descargar Certificado</a>
+                </div>
+                <div id="error-message" class="error-message hidden"></div>
+            </div>
         </div>
-
-
-
     </div>
 
 
 
+    
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="index.js"></script>
 
 </body>
 </html>
+
