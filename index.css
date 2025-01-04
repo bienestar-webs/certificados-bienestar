@@ -1,4 +1,25 @@
 
+/* Animación */
+
+
+.entrada {
+    
+  opacity: 0; /* Inicia invisible */
+  animation: fadeInEffect 4s forwards; /* Aplica la animación fadeInEffect en 2 segundos */
+    
+}
+
+/* Define la animación de desvanecimiento */
+@keyframes fadeInEffect {
+    
+  from {
+    opacity: 0; /* Comienza invisible */
+  }
+  to {
+    opacity: 1; /* Termina completamente visible */
+      
+  }
+}
 
 
 
