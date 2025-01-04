@@ -21,13 +21,15 @@ body {
 
 
 
+
 .container {
 
     width: 100%;
-    max-width: 600px; /* Aumentar el tamaño máximo */
-    padding: 20px;
+    max-width: 650px; /* Aumentar el tamaño máximo */
+    padding: 10px;
     box-sizing: border-box;
 }
+
 
 
 
@@ -149,7 +151,7 @@ body {
     text-decoration: none;
     border: none;
     border-radius: 25px;
-    margin-left: 11px;
+    margin-left: 50px;
     cursor: pointer;
     transition: background-color 0.5s;
 }
