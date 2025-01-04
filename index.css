@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 96vh;
+    height: 80vh;
     color: #333;
 }
 
@@ -241,7 +241,7 @@ body {
 
     body {
 
-        height: 93vh;
+        height: 92vh;
 
     }
 
