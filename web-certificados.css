@@ -35,7 +35,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
     color: #333;
 }
 
@@ -412,7 +412,7 @@ body {
 @media screen and (max-width: 1366px) {
     
     body {
-        height: 120vh;
+        height: 100vh;
     }
 
 
@@ -428,6 +428,13 @@ body {
     #certificado-canvas {
         max-width: 80%; /* Aseguramos que el canvas se ajuste bien en pantallas medianas */
     }
+
+
+          .btn2 { 
+
+            margin-top: 80px;
+        }
+
 
     /* Modal que ocupa toda la anchura */
     .modal-content {
@@ -478,10 +485,11 @@ body {
 
 
 @media screen and (max-width: 1024px) {
-
-    body {
-        height: 120vh;
+    
+   body {
+        height: 100vh;
     }
+
 
   
     .card-header h1 {
@@ -497,6 +505,13 @@ body {
         max-width: 80%; /* Aseguramos que el canvas se ajuste bien en pantallas pequeñas */
     }
 
+
+        .btn2 { 
+
+            margin-top: 80px;
+        }
+
+    
     /* Modal que ocupa toda la anchura */
     .modal-content {
         width: 100%; /* Modal ocupa todo el ancho */
