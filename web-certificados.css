@@ -412,7 +412,7 @@ body {
 @media screen and (max-width: 1366px) {
     
     body {
-        height: 100vh;
+        height: 120vh;
     }
 
 
@@ -424,26 +424,6 @@ body {
         font-size: 16px;
     }
 
-    .btn1 {
-        width: 48%;
-        padding: 12px;
-        font-size: 16px;
-    }
-
-    .btn2 {
-        width: 48%;
-        font-size: 16px;
-        padding: 12px;
-        margin-left: 555px;
-        position: relative;
-        top: -70px;
-        animation: btn2 5s ease-in-out;
-    }
-
-    @keyframes btn2 {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
 
     #certificado-canvas {
         max-width: 80%; /* Aseguramos que el canvas se ajuste bien en pantallas medianas */
@@ -500,7 +480,7 @@ body {
 @media screen and (max-width: 1024px) {
 
     body {
-        height: 100vh;
+        height: 120vh;
     }
 
   
@@ -512,26 +492,6 @@ body {
         font-size: 16px;
     }
 
-    .btn1 {
-        width: 44%;
-        padding: 12px;
-        font-size: 15px;
-    }
-
-    .btn2 {
-        width: 50%;
-        font-size: 15px;
-        padding: 12px;
-        margin-left: 333px;
-        position: relative;
-        top: -70px;
-        animation: btn2 5s ease-in-out;
-    }
-
-    @keyframes btn2 {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
 
     #certificado-canvas {
         max-width: 80%; /* Aseguramos que el canvas se ajuste bien en pantallas pequeñas */
