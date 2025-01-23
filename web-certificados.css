@@ -433,13 +433,13 @@ body {
           .btn2 { 
 
         position: relative;
-              top: -100px;
+              top: -90px;
         }
 
     #error-message{ 
 
 
-        font-size: 18px;
+        font-size: 16px;
     }
     /* Modal que ocupa toda la anchura */
     .modal-content {
@@ -464,7 +464,7 @@ body {
     .close-btn {
         font-size: 65px; /* Aumentamos el tamaño de la "X" */
         position: absolute;
-        top: 10px;
+        top: 15px;
         right: 10px;
         z-index: 1001; /* Asegura que la "X" esté sobre el contenido */
         cursor: pointer;
@@ -514,13 +514,13 @@ body {
          .btn2 { 
 
         position: relative;
-              top: -100px;
+              top: -90px;
         }
-
+ 
         #error-message{ 
 
 
-        font-size: 16px;
+        font-size: 15px;
     }
     
     /* Modal que ocupa toda la anchura */
@@ -546,7 +546,7 @@ body {
     .close-btn {
         font-size: 65px; /* Aumentamos el tamaño de la "X" */
         position: absolute;
-        top: 10px;
+        top: 15px;
         right: 10px;
         z-index: 1001; /* Asegura que la "X" esté sobre el contenido */
         cursor: pointer;
