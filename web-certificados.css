@@ -410,18 +410,11 @@ body {
 
 /* RESPOSIVE PARA DESKTOPS DE GAMA BAJA (Desde 1025px hasta 1366px) */
 @media screen and (max-width: 1366px) {
+    
     body {
-        height: 93vh;
+        height: 100vh;
     }
 
-    .container {
-        max-width: 100%;
-        padding: 20px;
-    }
-
-    .card {
-        padding: 30px;
-    }
 
     .card-header h1 {
         font-size: 24px;
@@ -460,7 +453,7 @@ body {
     .modal-content {
         width: 80%; /* Ajustamos el modal para que ocupe un 80% del ancho en pantallas medianas */
         max-width: 100%;
-        max-height: 90%;
+        max-height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -507,18 +500,10 @@ body {
 @media screen and (max-width: 1024px) {
 
     body {
-        height: 93vh;
+        height: 100vh;
     }
 
-    .container {
-        max-width: 100%;
-        padding: 15px;
-    }
-
-    .card {
-        padding: 30px;
-    }
-
+  
     .card-header h1 {
         font-size: 22px;
     }
@@ -534,7 +519,7 @@ body {
     }
 
     .btn2 {
-        width: 44%;
+        width: 50%;
         font-size: 15px;
         padding: 12px;
         margin-left: 333px;
@@ -556,7 +541,7 @@ body {
     .modal-content {
         width: 100%; /* Modal ocupa todo el ancho */
         max-width: 100%; /* Asegura que el modal no sea más grande que la pantalla */
-        max-height: 90%; /* Limita la altura para que no cubra toda la pantalla */
+        max-height: 100%; /* Limita la altura para que no cubra toda la pantalla */
         display: flex;
         justify-content: center;
         align-items: center;
