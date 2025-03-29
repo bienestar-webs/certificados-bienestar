@@ -5,7 +5,7 @@
 .entrada {
     
   opacity: 0; /* Inicia invisible */
-  animation: fadeInEffect 4s forwards; /* Aplica la animación fadeInEffect en 2 segundos */
+  animation: fadeInEffect 5s forwards; /* Aplica la animación fadeInEffect en 2 segundos */
     
 }
 
